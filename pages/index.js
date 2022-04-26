@@ -12,6 +12,7 @@ export default function Home() {
       </a>
     );
   });
+  MyButton.displayName = "about";
   return (
     <div className={styles.container}>
       <Head>
