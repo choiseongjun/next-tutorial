@@ -23,3 +23,4 @@ export const getServerSideProps = async () => {
   }
 };
 export default ssr;
+//12
