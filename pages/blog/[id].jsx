@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-const detail = () => {
+const Detail = () => {
   const router = useRouter();
 
   return (
@@ -12,4 +12,4 @@ const detail = () => {
   );
 };
 
-export default detail;
+export default Detail;
