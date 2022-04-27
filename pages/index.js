@@ -28,7 +28,7 @@ export default function Home() {
         </li>
         <li>
           <Link href="/homepage">
-            <a>section1 - prelendering</a>
+            <a>section1 - pre-rendering</a>
           </Link>
         </li>
         {/* <li>
