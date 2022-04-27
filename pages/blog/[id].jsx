@@ -6,7 +6,7 @@ const detail = () => {
 
   return (
     <>
-      <h1>{router.query.id}</h1>
+      <div>{router.query.id}</div>
       <div>test</div>
     </>
   );
