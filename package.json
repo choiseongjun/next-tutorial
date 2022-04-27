@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.27.1",
+    "buffer": "^6.0.3",
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "12.1.5",
