@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { getSortedPostsData } from "./lib/posts";
+import { getSortedPostsData } from "../lib/posts";
 
 function HomePage({ allPostsData }) {
   const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
