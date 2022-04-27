@@ -28,12 +28,40 @@ export default function Home() {
         </li>
         <li>
           <Link href="/homepage">
-            <a>홈페이지로</a>
+            <a>section2 - prelendering</a>
           </Link>
         </li>
         <li>
           <Link href="/about" passHref>
             <MyButton />
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={{
+              pathname: "/blog/[slug]",
+              query: { slug: "my-post" },
+            }}
+          >
+            <a>Dynamic routes</a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={{
+              pathname: "/blog/ssr",
+            }}
+          >
+            <a>SSR</a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={{
+              pathname: "/blog/staticpage",
+            }}
+          >
+            <a>static</a>
           </Link>
         </li>
       </ul>

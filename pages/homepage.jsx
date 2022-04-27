@@ -1,6 +1,7 @@
 import Head from "next/head";
+import { getSortedPostsData } from "./lib/posts";
 
-function HomePage() {
+function HomePage({ allPostsData }) {
   const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
 
   return (
@@ -8,13 +9,25 @@ function HomePage() {
       <Head title="Develop. Preview. Ship. 🚀" />
 
       <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
+        {allPostsData.map(({ id, date, title }) => (
+          <li key={id}>
+            {title}
+            <br />
+            {id}
+            <br />
+            {date}
+          </li>
         ))}
       </ul>
-
-      <button>Like</button>
     </div>
   );
+}
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }
 export default HomePage;
