@@ -28,14 +28,14 @@ export default function Home() {
         </li>
         <li>
           <Link href="/homepage">
-            <a>section2 - prelendering</a>
+            <a>section1 - prelendering</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/about" passHref>
             <MyButton />
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             href={{
@@ -43,10 +43,29 @@ export default function Home() {
               query: { slug: "my-post" },
             }}
           >
-            <a>Dynamic routes</a>
+            <a>section2 - Dynamic routes</a>
           </Link>
         </li>
         <li>
+          <Link
+            href={{
+              pathname: "/posts/pre-rendering",
+            }}
+          >
+            <a>section2 - Dynamic routes-pre-rendering</a>
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={{
+              pathname: "/posts/ssg-ssr",
+              // query: { slug: "ssg-ssr" },
+            }}
+          >
+            <a>section2 - Dynamic routes-ssg-ssr</a>
+          </Link>
+        </li>
+        {/* <li>
           <Link
             href={{
               pathname: "/blog/ssr",
@@ -54,7 +73,7 @@ export default function Home() {
           >
             <a>SSR</a>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             href={{
