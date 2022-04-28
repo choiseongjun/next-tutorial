@@ -1,7 +1,13 @@
 import React from "react";
 import axios from "axios";
 
-const ssr = ({ user }) => {
+interface Props {
+  user: {
+    avatar_url: string;
+  };
+}
+
+const ssr = ({ user }: Props) => {
   return (
     <div>
       <img src={user.avatar_url}></img>

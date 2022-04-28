@@ -2,11 +2,11 @@ import Head from "next/head";
 import { getSortedPostsData } from "../lib/posts";
 
 function HomePage({ allPostsData }) {
-  const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
-
+  const names: string[] = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"];
+  const title: string = "Develop. Preview. Ship. 🚀";
   return (
     <div>
-      <Head title="Develop. Preview. Ship. 🚀" />
+      <Head>{title}</Head>
 
       <ul>
         {allPostsData.map(({ id, date, title }) => (

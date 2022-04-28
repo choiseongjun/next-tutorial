@@ -1,9 +1,13 @@
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Layout from "../../components/layout";
-import { useRouter } from "next/router";
 import Date from "../../components/date";
+import { post, postData } from "../../model/posts";
 
-export default function Detail({ postData }) {
+interface Props {
+  postData: postData;
+}
+
+export default function Detail({ postData }: Props) {
   return (
     <Layout>
       {postData.title}
@@ -19,10 +23,7 @@ export default function Detail({ postData }) {
   );
 }
 export const getStaticPaths = async () => {
-  // const posts = await fetch("https://jsonplaceholder.typicode.com/posts").then(
-  //   (r) => r.json()
-  // );
-  const posts = [
+  const posts: post[] = [
     {
       id: 1,
       name: "pre-rendering",
@@ -33,7 +34,7 @@ export const getStaticPaths = async () => {
     },
   ];
   return {
-    paths: posts.map((post) => {
+    paths: posts.map((post: post) => {
       return {
         params: {
           id: post.name,
