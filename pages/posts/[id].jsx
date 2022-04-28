@@ -18,17 +18,31 @@ export default function Detail({ postData }) {
     </Layout>
   );
 }
-export async function getStaticPaths(data) {
-  // const paths = [{ params: { id: "test" } }];
-  // return { paths, fallback: "blocking" };
+export const getStaticPaths = async () => {
+  // const posts = await fetch("https://jsonplaceholder.typicode.com/posts").then(
+  //   (r) => r.json()
+  // );
+  const posts = [
+    {
+      id: 1,
+      name: "pre-rendering",
+    },
+    {
+      id: 2,
+      name: "ssg-ssr",
+    },
+  ];
   return {
-    paths: [{ params: {} }],
-    // { parmas: {} }[] 형태로 paths 리턴해야 함
-    // 빌드 시에 해당 페이지들을 static으로 생성
-    fallback: true | false | "blocking",
-    // fallback을 리턴해야 함
+    paths: posts.map((post) => {
+      return {
+        params: {
+          id: post.name,
+        },
+      };
+    }),
+    fallback: false,
   };
-}
+};
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
