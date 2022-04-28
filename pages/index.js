@@ -59,7 +59,6 @@ export default function Home() {
           <Link
             href={{
               pathname: "/posts/ssg-ssr",
-              // query: { slug: "ssg-ssr" },
             }}
           >
             <a>section2 - Dynamic routes-ssg-ssr</a>
