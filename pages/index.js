@@ -65,7 +65,7 @@ export default function Home() {
             <a>section2 - Dynamic routes-ssg-ssr</a>
           </Link>
         </li>
-        {/* <li>
+        {/* <li> 
           <Link
             href={{
               pathname: "/blog/ssr",
