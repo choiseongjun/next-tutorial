@@ -4,8 +4,14 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
+interface Props {
+  onClick: () => void;
+  href: string;
+}
+export type Ref = HTMLAnchorElement;
+
 export default function Home() {
-  const MyButton = forwardRef(({ onClick, href }, ref) => {
+  const MyButton = forwardRef<Ref, Props>(({ onClick, href }, ref) => {
     return (
       <a href={href} onClick={onClick} ref={ref}>
         Click Me
@@ -31,11 +37,6 @@ export default function Home() {
             <a>section1 - pre-rendering</a>
           </Link>
         </li>
-        {/* <li>
-          <Link href="/about" passHref>
-            <MyButton />
-          </Link>
-        </li> */}
         <li>
           <Link
             href={{
