@@ -92,6 +92,15 @@ export default function Home() {
             <a>tailwind exersise</a>
           </Link>
         </li>
+        <li>
+          <Link
+            href={{
+              pathname: "/project/",
+            }}
+          >
+            <a>tailwind project</a>
+          </Link>
+        </li>
       </ul>
 
       <footer className={styles.footer}>

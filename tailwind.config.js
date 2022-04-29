@@ -5,9 +5,21 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
+      sans: ["Noto Sans KR", "sans-serif"],
+    },
+    fontSize: {
+      24: "24px",
     },
     extend: {
+      width: {
+        1200: "1200px",
+      },
+      padding: {
+        60: "60px",
+      },
+      height: {
+        100: "100px",
+      },
       flexGrow: {
         2: "2",
         3: "3",
