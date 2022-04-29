@@ -5,8 +5,7 @@ const index = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       {" "}
-      <Header />
-      index
+      <Header>{"teset"}</Header>
     </div>
   );
 };
