@@ -2,12 +2,11 @@ import React, { useEffect } from "react";
 import { FiSearch } from "react-icons/fi";
 import { BsInfoCircle } from "react-icons/bs";
 import { BsBasket3 } from "react-icons/bs";
-import { Carousel } from "../carouesel";
 
 interface Props {
   children: JSX.Element | JSX.Element[] | React.ReactNode;
 }
-const index = ({ children }: Props) => {
+const Index = ({ children }: Props) => {
   const ref: any = React.useRef();
 
   // useEffect(() => {
@@ -52,4 +51,4 @@ const index = ({ children }: Props) => {
   );
 };
 
-export default index;
+export default Index;
