@@ -10,16 +10,15 @@ const index = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="absolute right-0 left-0 bg-stone-500">
-      <Slider {...settings}>
-        <div>
-          <img src="http://placekitten.com/400/200" />
-        </div>
-        <div>
-          <img src="http://placekitten.com/400/200" />
-        </div>
-      </Slider>
-    </div>
+    <>
+      <div>
+        {/* <div className="absolute right-0 left-0 bg-stone-500 "> */}
+        <Slider {...settings}>
+          <div>{/* <img src="http://placekitten.com/400/200" /> */}</div>
+          <div>{/* <img src="http://placekitten.com/400/200" /> */}</div>
+        </Slider>
+      </div>
+    </>
   );
 };
 
