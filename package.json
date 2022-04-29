@@ -9,8 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "-": "0.0.1",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
     "axios": "^0.27.1",
     "buffer": "^6.0.3",
+    "d": "^1.0.1",
     "date-fns": "^2.28.0",
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
@@ -26,8 +30,11 @@
   "devDependencies": {
     "@types/node": "^17.0.29",
     "@types/react": "^18.0.8",
+    "autoprefixer": "^10.4.5",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
-    "typescript": "^4.6.3"
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4"
   }
 }
