@@ -11,6 +11,9 @@ module.exports = {
       24: "24px",
     },
     extend: {
+      boxShadow: {
+        "10cus": "10px 5px 10px #00000029;",
+      },
       width: {
         1200: "1200px",
       },

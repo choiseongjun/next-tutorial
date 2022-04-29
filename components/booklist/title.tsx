@@ -5,7 +5,7 @@ interface Props {
 }
 const title = ({ titleName }: Props) => {
   return (
-    <div className="mt-[180px] mb-[20px] font-medium text-[32px] relative block">
+    <div className=" mb-[20px] font-medium text-[32px] relative block">
       {titleName}
     </div>
   );
